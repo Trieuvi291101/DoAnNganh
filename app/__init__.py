@@ -18,12 +18,44 @@ cloudinary.config(
 
 #twilio infomation
 keys = {
-    'account_sid': 'ACc43453d6fe20ba148ba31d6c427675c4',
-    'auth_token': 'fbfeabcd879873b8848ae248788c9087',
-    'twilio_number': '+16514482448'
+    'account_sid': 'ACdd1ea9ef4ef4b86ae84b7405f334b97a',
+    'auth_token': 'de2dd96bd11aa477d08c0aca9be0b9ed',
+    'twilio_number': '+18145930872'
 }
+#SC6Ndit1NT2ay2dCCcdJkPbZacvLmRGEH-yiddyH
+
+
+# #twilio infomation hien
+# keys = {
+#     'account_sid': 'ACffd585037bf56574b101019c56a802e3',
+#     'auth_token': '136c3a5c5b36b662dc729b371dbcfb92',
+#     'twilio_number': '+14454474893'
+# }
+
+
+# twilio infomation y
+# keys = {
+#     'account_sid': 'AC3f4b09b4ccd42ea6fbc25a0f8535528b',
+#     'auth_token': '292e3cef881c83fda8a8ee1b69e8b994',
+#     'twilio_number': '+15737992040'
+# }
+
 #client = Client(account_sid, auth_token)
 client = Client(keys['account_sid'], keys['auth_token'])
+#
+# const firebaseConfig = {
+#   apiKey: "AIzaSyC3Mk8KPfPRP8L3NVbfX-8qUW60wfNAtW8",
+#   authDomain: "chat-clinic-75bdf.firebaseapp.com",
+#   projectId: "chat-clinic-75bdf",
+#   storageBucket: "chat-clinic-75bdf.appspot.com",
+#   messagingSenderId: "778252912400",
+#   appId: "1:778252912400:web:c443563ed25326f52e8795",
+#   measurementId: "G-92Y3E8P0ZM"
+# };
+#
+# // Initialize Firebase
+# const app = initializeApp(firebaseConfig);
+# const analytics = getAnalytics(app);
 
 db = SQLAlchemy(app=app)
 login = LoginManager(app=app)

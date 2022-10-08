@@ -115,3 +115,6 @@ function SubmitButtonStatus(idButton, status) {
     }
     return true
 }
+function ChatClinic(){
+
+}

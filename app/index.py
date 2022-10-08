@@ -62,7 +62,7 @@ def otp_auth():
             session['response'] = str(otp_code)
             print("======================== OTP la " + str(otp_code))
             ###########Enable this line to send OTP for customer validation########################
-            message = utils.send_messages(phone_number, '[Phòng mạch Hồng Hiền Vy Tiến] Mã số xác thực của bạn là: ' + str(otp_code)
+            message = utils.send_messages(phone_number, '[Phòng mạch Vi Vi] Mã số xác thực của bạn là: ' + str(otp_code)
                                               + '. Xin vui lòng không chia sẻ mã số này cho ai khác kể cả nhân viên của phòng mạch.')
     return 'OK'
 
@@ -78,7 +78,7 @@ def otp_auth_again():
             print("======================== AGAIN OTP la " + str(otp_code))
             phone_number = request.json['phoneNumber']
             ###########Enable this line to send OTP for again customer validation########################
-            message = utils.send_messages(phone_number, '[Phòng mạch Hồng Hiền Vy Tiến] Mã số xác thực của bạn là: ' + str(otp_code)
+            message = utils.send_messages(phone_number, '[Phòng mạch Vi Vi] Mã số xác thực của bạn là: ' + str(otp_code)
                                               + '. Xin vui lòng không chia sẻ mã số này cho ai khác kể cả nhân viên của phòng mạch.')
     return 'OK'
 

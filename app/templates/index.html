@@ -121,6 +121,7 @@
                                 id="bt-history-lookup">Lịch sử giao dịch</button></li>
                     <li><button class="btn btn-warming" type="button" data-toggle="modal" onclick="CheckSession('{{ current_user.id }}',this.id)"
                                 id="bt-order-new">Đặt hẹn</button></li>
+<!--                    <li><a href="{{ url_for('signin') }}">Đăng nhập</a></li>-->
                     <li><i>({% if current_user.id %}
                         <span>{{ current_user.first_name }}, <a class="d-inline-block p-0 m-0" href="{{ url_for('customer_logout') }}">Thoát</a></span>
                         {% else %}
@@ -130,7 +131,7 @@
             </div>
         </nav>
         <div id="call-me" class="pop-up-control">
-            <a href="tel:1900189261">
+            <a href="tel:0949048542">
                 <img src="/static/images/call-me.png" width="100px" alt="call">
             </a>
         </div>
@@ -139,6 +140,11 @@
                 <img src="/static/images/go-to-top.png" width="50px" alt="call">
             </a>
         </div>
+<!--        <div id="zalo" class="pop-up-control">-->
+<!--            <a href="tel:0949048542">-->
+<!--                <img src="/static/images/call-me.png" width="100px" alt="zalo">-->
+<!--            </a>-->
+<!--        </div>-->
         <!-- login -->
         <form action="{{ url_for('customer_login') }}" method="post" id="customer-validate">
             <div id="login-require" class="modal fade" tabindex="-1">
@@ -335,6 +341,37 @@
     {% endblock %}
     {% block content %}
         <!-- first landing -->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{{ url_for('static', filename='images/pic1.jpg') }}" alt="pic 1" width=100% height="600">
+            </div>
+            <div class="carousel-item">
+              <img src="{{ url_for('static', filename='images/pic2.jpg') }}" alt="pic 2" width=100% height="600">
+            </div>
+            <div class="carousel-item">
+              <img src="{{ url_for('static', filename='images/pic3.jpg') }}" alt="pic 3" width=100%  height="600">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+
+        </div>
         <div id="first" class="background-below-text opacity-filter">
             <img src="{{ url_for('static', filename='images/background-2.jpg') }}" style="z-index: 2;" width="100%">
             <span class="overwrite-in" id="first-landing">
@@ -516,6 +553,18 @@
             </div>
         </footer>
         <div class="col-md-12 copy text-center" id="copy"> &copy;Được tạo dựng bởi Triệu Vi _ Đồ án ngành</div>
+<!--    <div id="onesignal-slidedown-container" class="onesignal-slidedown-container onesignal-reset slide-down">-->
+<!--        <div id="onesignal-slidedown-dialog" class="onesignal-slidedown-dialog">-->
+<!--            <div id="normal-slidedown"><div class="slidedown-body" id="slidedown-body">-->
+<!--                <div class="slidedown-body-icon"><img alt="notification icon" src="https://img.onesignal.com/permanent/bb045e3f-040f-4d38-bb62-a68078379442"></div>-->
+<!--                <div class="slidedown-body-message">Click vào Đồng ý để không bỏ lỡ các thông tin kinh doanh mới hữu ích từ PosApp!</div>-->
+<!--                <div class="clearfix"></div>-->
+<!--                <div id="onesignal-loading-container"></div>-->
+<!--            </div><div class="slidedown-footer" id="slidedown-footer"><button class="align-right primary slidedown-button" id="onesignal-slidedown-allow-button">Đồng ý</button>-->
+<!--                <button class="align-right secondary slidedown-button" id="onesignal-slidedown-cancel-button">Không, cảm ơn</button>-->
+<!--                <div class="clearfix">-->
+
+<!--    </div></div></div></div></div>-->
     {% endblock %}
 </body>
 </html>

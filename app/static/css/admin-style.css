@@ -39,3 +39,11 @@ display: block;
     top: 0 !important;
     right: 0 !important;
 }
+
+/* my background */
+.my-background {
+    background-image: url('/static/images/bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
