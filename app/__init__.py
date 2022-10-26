@@ -16,29 +16,14 @@ cloudinary.config(
     api_secret='UcuyEfGi4mWdqTG2f1F1e_jfJUE'
 )
 
+
 #twilio infomation
 keys = {
-    'account_sid': 'ACdd1ea9ef4ef4b86ae84b7405f334b97a',
-    'auth_token': 'de2dd96bd11aa477d08c0aca9be0b9ed',
-    'twilio_number': '+18145930872'
+    'account_sid': 'AC205cfd2eb535ffb9ed06233d7a370545',
+    'auth_token': 'f5a23510c1f180cbd4c821de4e30cf4a',
+    'twilio_number': '+14255377447'
 }
-#SC6Ndit1NT2ay2dCCcdJkPbZacvLmRGEH-yiddyH
 
-
-# #twilio infomation hien
-# keys = {
-#     'account_sid': 'ACffd585037bf56574b101019c56a802e3',
-#     'auth_token': '136c3a5c5b36b662dc729b371dbcfb92',
-#     'twilio_number': '+14454474893'
-# }
-
-
-# twilio infomation y
-# keys = {
-#     'account_sid': 'AC3f4b09b4ccd42ea6fbc25a0f8535528b',
-#     'auth_token': '292e3cef881c83fda8a8ee1b69e8b994',
-#     'twilio_number': '+15737992040'
-# }
 
 #client = Client(account_sid, auth_token)
 client = Client(keys['account_sid'], keys['auth_token'])
